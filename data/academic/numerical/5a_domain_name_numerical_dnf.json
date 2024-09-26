@@ -1,0 +1,23 @@
+[
+    {
+        "Dataset": "Academic",
+        "Query_name": "5a_domain_name",
+        "Output_tuples": "",
+        "DNF": [
+            [
+                0,
+                1
+            ],
+            [
+                0,
+                2
+            ]
+        ],
+        "Signature": "(B*A)*"
+    },
+    {
+        "7b2db075-7922-404f-a2f1-ca4562da9db4": 0,
+        "9a1790fd-30b4-4ffe-bdc2-6979774778ba": 1,
+        "a5f4ae89-01de-4eba-83ea-2bc43d548d55": 2
+    }
+]

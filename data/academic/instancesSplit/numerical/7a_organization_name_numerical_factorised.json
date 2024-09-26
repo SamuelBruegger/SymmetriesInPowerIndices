@@ -1,0 +1,865 @@
+[
+    {
+        "operator": "and",
+        "subformula": [
+            0,
+            {
+                "operator": "or",
+                "subformula": [
+                    {
+                        "operator": "and",
+                        "subformula": [
+                            1,
+                            2,
+                            3,
+                            4,
+                            5
+                        ]
+                    },
+                    {
+                        "operator": "and",
+                        "subformula": [
+                            6,
+                            7,
+                            8,
+                            9,
+                            10
+                        ]
+                    },
+                    {
+                        "operator": "and",
+                        "subformula": [
+                            11,
+                            12,
+                            13,
+                            {
+                                "operator": "or",
+                                "subformula": [
+                                    {
+                                        "operator": "and",
+                                        "subformula": [
+                                            14,
+                                            15
+                                        ]
+                                    },
+                                    {
+                                        "operator": "and",
+                                        "subformula": [
+                                            {
+                                                "operator": "or",
+                                                "subformula": [
+                                                    14,
+                                                    15
+                                                ]
+                                            },
+                                            16
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "operator": "and",
+                        "subformula": [
+                            17,
+                            18,
+                            3,
+                            19,
+                            20
+                        ]
+                    },
+                    {
+                        "operator": "and",
+                        "subformula": [
+                            21,
+                            22,
+                            23,
+                            {
+                                "operator": "or",
+                                "subformula": [
+                                    {
+                                        "operator": "and",
+                                        "subformula": [
+                                            24,
+                                            25
+                                        ]
+                                    },
+                                    {
+                                        "operator": "and",
+                                        "subformula": [
+                                            {
+                                                "operator": "or",
+                                                "subformula": [
+                                                    24,
+                                                    25
+                                                ]
+                                            },
+                                            26
+                                        ]
+                                    },
+                                    {
+                                        "operator": "and",
+                                        "subformula": [
+                                            {
+                                                "operator": "or",
+                                                "subformula": [
+                                                    24,
+                                                    25,
+                                                    26
+                                                ]
+                                            },
+                                            27
+                                        ]
+                                    },
+                                    {
+                                        "operator": "and",
+                                        "subformula": [
+                                            {
+                                                "operator": "or",
+                                                "subformula": [
+                                                    27,
+                                                    25,
+                                                    26,
+                                                    24
+                                                ]
+                                            },
+                                            28
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "operator": "and",
+                        "subformula": [
+                            29,
+                            30,
+                            31,
+                            32,
+                            33
+                        ]
+                    },
+                    {
+                        "operator": "and",
+                        "subformula": [
+                            34,
+                            {
+                                "operator": "or",
+                                "subformula": [
+                                    {
+                                        "operator": "and",
+                                        "subformula": [
+                                            35,
+                                            23,
+                                            36,
+                                            37
+                                        ]
+                                    },
+                                    {
+                                        "operator": "and",
+                                        "subformula": [
+                                            38,
+                                            3,
+                                            {
+                                                "operator": "or",
+                                                "subformula": [
+                                                    {
+                                                        "operator": "and",
+                                                        "subformula": [
+                                                            39,
+                                                            36
+                                                        ]
+                                                    },
+                                                    {
+                                                        "operator": "and",
+                                                        "subformula": [
+                                                            {
+                                                                "operator": "or",
+                                                                "subformula": [
+                                                                    39,
+                                                                    36
+                                                                ]
+                                                            },
+                                                            37
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "operator": "and",
+                        "subformula": [
+                            40,
+                            {
+                                "operator": "or",
+                                "subformula": [
+                                    {
+                                        "operator": "and",
+                                        "subformula": [
+                                            41,
+                                            42,
+                                            43,
+                                            44
+                                        ]
+                                    },
+                                    {
+                                        "operator": "and",
+                                        "subformula": [
+                                            45,
+                                            46,
+                                            {
+                                                "operator": "or",
+                                                "subformula": [
+                                                    {
+                                                        "operator": "and",
+                                                        "subformula": [
+                                                            {
+                                                                "operator": "or",
+                                                                "subformula": [
+                                                                    47,
+                                                                    43,
+                                                                    48
+                                                                ]
+                                                            },
+                                                            49
+                                                        ]
+                                                    },
+                                                    {
+                                                        "operator": "and",
+                                                        "subformula": [
+                                                            {
+                                                                "operator": "or",
+                                                                "subformula": [
+                                                                    43,
+                                                                    48,
+                                                                    49,
+                                                                    47
+                                                                ]
+                                                            },
+                                                            50
+                                                        ]
+                                                    },
+                                                    {
+                                                        "operator": "and",
+                                                        "subformula": [
+                                                            48,
+                                                            43
+                                                        ]
+                                                    },
+                                                    {
+                                                        "operator": "and",
+                                                        "subformula": [
+                                                            {
+                                                                "operator": "or",
+                                                                "subformula": [
+                                                                    48,
+                                                                    43
+                                                                ]
+                                                            },
+                                                            47
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "operator": "and",
+                        "subformula": [
+                            51,
+                            52,
+                            3,
+                            {
+                                "operator": "or",
+                                "subformula": [
+                                    {
+                                        "operator": "and",
+                                        "subformula": [
+                                            53,
+                                            54
+                                        ]
+                                    },
+                                    {
+                                        "operator": "and",
+                                        "subformula": [
+                                            {
+                                                "operator": "or",
+                                                "subformula": [
+                                                    53,
+                                                    54
+                                                ]
+                                            },
+                                            55
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "operator": "and",
+                        "subformula": [
+                            56,
+                            57,
+                            58,
+                            59,
+                            60
+                        ]
+                    },
+                    {
+                        "operator": "and",
+                        "subformula": [
+                            61,
+                            62,
+                            3,
+                            {
+                                "operator": "or",
+                                "subformula": [
+                                    {
+                                        "operator": "and",
+                                        "subformula": [
+                                            63,
+                                            64
+                                        ]
+                                    },
+                                    {
+                                        "operator": "and",
+                                        "subformula": [
+                                            {
+                                                "operator": "or",
+                                                "subformula": [
+                                                    63,
+                                                    64
+                                                ]
+                                            },
+                                            65
+                                        ]
+                                    },
+                                    {
+                                        "operator": "and",
+                                        "subformula": [
+                                            {
+                                                "operator": "or",
+                                                "subformula": [
+                                                    65,
+                                                    64,
+                                                    63
+                                                ]
+                                            },
+                                            66
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "operator": "and",
+                        "subformula": [
+                            67,
+                            68,
+                            3,
+                            {
+                                "operator": "or",
+                                "subformula": [
+                                    {
+                                        "operator": "and",
+                                        "subformula": [
+                                            69,
+                                            70
+                                        ]
+                                    },
+                                    {
+                                        "operator": "and",
+                                        "subformula": [
+                                            {
+                                                "operator": "or",
+                                                "subformula": [
+                                                    70,
+                                                    69
+                                                ]
+                                            },
+                                            71
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "operator": "and",
+                        "subformula": [
+                            72,
+                            73,
+                            74,
+                            {
+                                "operator": "or",
+                                "subformula": [
+                                    {
+                                        "operator": "and",
+                                        "subformula": [
+                                            75,
+                                            76
+                                        ]
+                                    },
+                                    {
+                                        "operator": "and",
+                                        "subformula": [
+                                            {
+                                                "operator": "or",
+                                                "subformula": [
+                                                    75,
+                                                    76
+                                                ]
+                                            },
+                                            77
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "operator": "and",
+                        "subformula": [
+                            78,
+                            79,
+                            3,
+                            {
+                                "operator": "or",
+                                "subformula": [
+                                    {
+                                        "operator": "and",
+                                        "subformula": [
+                                            80,
+                                            81
+                                        ]
+                                    },
+                                    {
+                                        "operator": "and",
+                                        "subformula": [
+                                            {
+                                                "operator": "or",
+                                                "subformula": [
+                                                    80,
+                                                    81
+                                                ]
+                                            },
+                                            82
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "operator": "and",
+                        "subformula": [
+                            83,
+                            84,
+                            85,
+                            86,
+                            87
+                        ]
+                    },
+                    {
+                        "operator": "and",
+                        "subformula": [
+                            88,
+                            89,
+                            90,
+                            91,
+                            92
+                        ]
+                    },
+                    {
+                        "operator": "and",
+                        "subformula": [
+                            93,
+                            94,
+                            95,
+                            96,
+                            97
+                        ]
+                    },
+                    {
+                        "operator": "and",
+                        "subformula": [
+                            98,
+                            99,
+                            100,
+                            {
+                                "operator": "or",
+                                "subformula": [
+                                    {
+                                        "operator": "and",
+                                        "subformula": [
+                                            101,
+                                            102
+                                        ]
+                                    },
+                                    {
+                                        "operator": "and",
+                                        "subformula": [
+                                            {
+                                                "operator": "or",
+                                                "subformula": [
+                                                    101,
+                                                    102,
+                                                    103
+                                                ]
+                                            },
+                                            104
+                                        ]
+                                    },
+                                    {
+                                        "operator": "and",
+                                        "subformula": [
+                                            {
+                                                "operator": "or",
+                                                "subformula": [
+                                                    102,
+                                                    101
+                                                ]
+                                            },
+                                            103
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "operator": "and",
+                        "subformula": [
+                            105,
+                            {
+                                "operator": "or",
+                                "subformula": [
+                                    {
+                                        "operator": "and",
+                                        "subformula": [
+                                            106,
+                                            100,
+                                            {
+                                                "operator": "or",
+                                                "subformula": [
+                                                    {
+                                                        "operator": "and",
+                                                        "subformula": [
+                                                            107,
+                                                            108
+                                                        ]
+                                                    },
+                                                    {
+                                                        "operator": "and",
+                                                        "subformula": [
+                                                            {
+                                                                "operator": "or",
+                                                                "subformula": [
+                                                                    108,
+                                                                    107
+                                                                ]
+                                                            },
+                                                            109
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "operator": "and",
+                                        "subformula": [
+                                            110,
+                                            3,
+                                            {
+                                                "operator": "or",
+                                                "subformula": [
+                                                    {
+                                                        "operator": "and",
+                                                        "subformula": [
+                                                            107,
+                                                            108
+                                                        ]
+                                                    },
+                                                    {
+                                                        "operator": "and",
+                                                        "subformula": [
+                                                            {
+                                                                "operator": "or",
+                                                                "subformula": [
+                                                                    108,
+                                                                    107
+                                                                ]
+                                                            },
+                                                            109
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "operator": "and",
+                        "subformula": [
+                            111,
+                            112,
+                            3,
+                            {
+                                "operator": "or",
+                                "subformula": [
+                                    {
+                                        "operator": "and",
+                                        "subformula": [
+                                            113,
+                                            114
+                                        ]
+                                    },
+                                    {
+                                        "operator": "and",
+                                        "subformula": [
+                                            {
+                                                "operator": "or",
+                                                "subformula": [
+                                                    115,
+                                                    114,
+                                                    113,
+                                                    116
+                                                ]
+                                            },
+                                            117
+                                        ]
+                                    },
+                                    {
+                                        "operator": "and",
+                                        "subformula": [
+                                            {
+                                                "operator": "or",
+                                                "subformula": [
+                                                    114,
+                                                    113
+                                                ]
+                                            },
+                                            115
+                                        ]
+                                    },
+                                    {
+                                        "operator": "and",
+                                        "subformula": [
+                                            {
+                                                "operator": "or",
+                                                "subformula": [
+                                                    114,
+                                                    115,
+                                                    113
+                                                ]
+                                            },
+                                            116
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "operator": "and",
+                        "subformula": [
+                            118,
+                            {
+                                "operator": "or",
+                                "subformula": [
+                                    {
+                                        "operator": "and",
+                                        "subformula": [
+                                            119,
+                                            120,
+                                            121,
+                                            122
+                                        ]
+                                    },
+                                    {
+                                        "operator": "and",
+                                        "subformula": [
+                                            123,
+                                            3,
+                                            {
+                                                "operator": "or",
+                                                "subformula": [
+                                                    {
+                                                        "operator": "and",
+                                                        "subformula": [
+                                                            124,
+                                                            125
+                                                        ]
+                                                    },
+                                                    {
+                                                        "operator": "and",
+                                                        "subformula": [
+                                                            {
+                                                                "operator": "or",
+                                                                "subformula": [
+                                                                    124,
+                                                                    125
+                                                                ]
+                                                            },
+                                                            126
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "9a1790fd-30b4-4ffe-bdc2-6979774778ba": 0,
+        "06fae6d8-07e0-472c-a390-cbaba6296b21": 1,
+        "b8030b3c-96d3-4eaf-9c95-3098362b23d5": 2,
+        "72213cb6-3f1a-4f9d-b882-c4c4bca1d060": 3,
+        "21b8607a-af81-4d57-a410-82d261beff15": 4,
+        "a57097dc-1611-45d0-a66d-6673c2b81155": 5,
+        "10ada4b2-dd31-45a0-afb4-aae36f34bee4": 6,
+        "61506952-b5e5-4b3f-a8f5-d51f38bee80e": 7,
+        "c7e4f992-aff7-4074-831d-f5924a9f3a99": 8,
+        "3214a47b-8132-46b9-ac4d-f7e3511e5abc": 9,
+        "db0f9170-8b4d-4c06-af19-79b4098362a7": 10,
+        "32e66cb1-e9c8-49c0-b027-b9fa5061a4ec": 11,
+        "e6852a3c-75e6-4857-908c-a45eb0bc9905": 12,
+        "16232bed-9344-4f77-a14e-45082700c16e": 13,
+        "9598eb58-80d4-4cab-9960-3cb92a856b6d": 14,
+        "d832ac1a-568c-4bfc-b811-b0e8cfaf6b66": 15,
+        "c8eb4a11-2765-48a0-91e9-e2ccec367d7f": 16,
+        "3d93e3a1-0eee-48ba-aa8a-60b569830112": 17,
+        "b37a4f04-06f1-4bbe-ab7b-1dbb924132af": 18,
+        "29dab805-43de-4b2e-a2e5-dfc94185e846": 19,
+        "bb2c13ea-4eae-4ac5-af6d-da9a6be042c5": 20,
+        "3f3d2b7b-6e41-4b82-bae0-8820756ade54": 21,
+        "cd0415d9-d58a-44b2-870c-720dd65f2e4e": 22,
+        "edaea1f2-623c-446e-baa9-4d9ea594786c": 23,
+        "358b1367-bfd7-4f3a-9fb1-22c95e6d1b7e": 24,
+        "83230b47-c721-48a9-a0e1-958b575d6411": 25,
+        "35d19d94-0d48-446f-a3eb-9decffdcd464": 26,
+        "4e70e899-2b28-4ed4-bf8f-f2866315da48": 27,
+        "8674d38b-5fdb-4268-a9b9-cd108bf442d4": 28,
+        "3f9f8521-8dfe-4abd-baab-7d0b83503bda": 29,
+        "39bf1cec-2498-45d3-8057-53d1498e2555": 30,
+        "ecd7cd52-0365-4e18-a978-c9fc5731e066": 31,
+        "28b717ff-2b29-451c-bed9-18a519651056": 32,
+        "06b530ac-d5ff-4daa-befc-6fbf18532d9d": 33,
+        "44b28415-4020-4b7b-8e41-110ed7a918c1": 34,
+        "9bfd518d-b0d8-4bc8-85c9-cec78466818f": 35,
+        "6c4e1753-34e9-4ef0-bda0-68379c2214df": 36,
+        "1aae8f43-495a-49ef-8a85-687851a780fc": 37,
+        "ae97b52b-1bcf-4671-b5b3-2189939551ec": 38,
+        "db0695ea-3c29-4ef8-a75f-2d8087f51109": 39,
+        "5ba42314-9f6a-43ea-85dc-7281c6463183": 40,
+        "7807aaf8-6f3c-448f-883a-e395ce9fc02c": 41,
+        "6722626e-697a-4d7e-b3bd-023235d00b8a": 42,
+        "ade5b139-6666-429a-9f72-99825962b6f3": 43,
+        "c2403f81-9a98-48f0-870b-0f49a6117958": 44,
+        "dc56a1ba-d9b2-4b95-95e6-ec6e0226421b": 45,
+        "635b2810-74a3-4d52-81cc-19191cf41ab7": 46,
+        "0399547a-8b93-4dc6-8ef9-2376da1c9b35": 47,
+        "de47432c-4466-4996-adbb-3fe2583bc873": 48,
+        "dca593b6-63ed-4b41-9e79-a1225886aaa1": 49,
+        "604c5dfd-2195-471d-9357-f9ffc95e6c11": 50,
+        "64acc720-ff5a-416d-be4b-625a0dd38443": 51,
+        "9406e06e-5d26-4a31-89dc-88e39c94d835": 52,
+        "7b2db075-7922-404f-a2f1-ca4562da9db4": 53,
+        "fb3c5e9d-acb1-434b-8c35-dc822b4954d4": 54,
+        "67ad3047-9efe-4112-89e1-d671fdc7c0fc": 55,
+        "6f02400b-3b22-47f8-9c2d-5389fb72dcbf": 56,
+        "5ec8829a-9c2a-4d18-ba3c-a5a79197bee1": 57,
+        "cd41685a-a74b-4819-9160-33e99c538659": 58,
+        "af03f70b-2a12-4e7c-9b56-e66f987b501c": 59,
+        "8c03e813-6cab-451a-b006-d3da7670513c": 60,
+        "7680a9b0-fe01-4ff3-9499-50d2e4395d3d": 61,
+        "0c75cd79-571e-4e50-8d6c-24021742defe": 62,
+        "49489ed0-106a-42c7-99b3-c0849d076b22": 63,
+        "5ac618ed-9d1c-473d-bf4b-5c8408b91e24": 64,
+        "7def0538-6f76-48c8-abc5-b3fbfb56c5a9": 65,
+        "aee7e9e1-8c67-41c8-bf20-778bc6e0e1ee": 66,
+        "83716300-305b-4bf8-9092-807c0144bdad": 67,
+        "ddc90c01-3061-4463-b1a4-eab61c12b532": 68,
+        "1cb3989b-1d6e-49f9-a9b7-eefa52bffa4b": 69,
+        "6fa706d5-68db-4a06-b537-ed1d6e925d55": 70,
+        "e80f6da3-e5de-48f1-90da-d994e2755bda": 71,
+        "8385c028-cdae-470b-a7dc-38c3dd388320": 72,
+        "45fed3e1-3ef8-4e63-9b32-fc01ab72a683": 73,
+        "1fb548ed-21fa-4032-a9aa-7baabf67e7fd": 74,
+        "e779b82d-3f81-4c2e-b8b8-0bc1d1454d97": 75,
+        "a68c16a5-d29b-4ce6-9121-f7c14efeea5b": 76,
+        "5ebcbbe1-71a6-43b5-b9bb-fedeb8fe43d4": 77,
+        "be7b7785-a73a-41b0-a5cc-ee761014af45": 78,
+        "0ee98240-93dd-439e-9401-97eab6a97e64": 79,
+        "48d08468-2852-41c8-9de2-055493bfe46a": 80,
+        "2e54b3b3-d736-443b-807e-5ff7bd78cedf": 81,
+        "ee8d8975-a341-4a43-9942-72d32399f23b": 82,
+        "d0e392ac-2094-4ccb-a30d-71ac6cf49144": 83,
+        "d1050991-68f8-4f59-aef2-7b81b3bd7da4": 84,
+        "06ba09c3-cfb6-4952-9ea4-3518a547fd4f": 85,
+        "15405395-0785-46e1-a325-41ff1dff309c": 86,
+        "4e86c562-8e4a-416f-862d-04d138e27393": 87,
+        "d2403f12-a525-4280-b7c1-dea5352d7742": 88,
+        "e30c9c9c-d8f8-401c-837b-92866e6de82d": 89,
+        "0ee6e6cb-bb77-4143-ac50-c2c50519ce9f": 90,
+        "8431e289-eeb4-4fb7-bd14-d088338d740c": 91,
+        "8a143402-7797-41a4-b2d0-26f4384925d0": 92,
+        "dbb15404-0d96-4c0d-83e8-537a9d1094a9": 93,
+        "8ac12958-e3c1-4571-b878-1ac48b0c63ba": 94,
+        "ac4854c8-bdfa-4310-b494-bf43bb1b742d": 95,
+        "061c0dc8-a833-4e95-a227-39d8b5880de2": 96,
+        "27e287ee-6320-4d76-b08c-80e478a7c184": 97,
+        "dd3e21ed-bb74-4004-b7bc-5c65646fa1e9": 98,
+        "676e121e-b4d4-4ff4-b20b-2220ae524f22": 99,
+        "22930c98-cea0-4b34-8a22-8f5df9bfeff8": 100,
+        "89d2b5a4-8d60-447c-82e9-930fd226a868": 101,
+        "a5756f34-ec9a-4d5e-8100-61550e06cb07": 102,
+        "6700aa5c-6bf0-430b-bc0a-51714c8471aa": 103,
+        "09d4c11b-c80d-479e-ae26-12405d91bdb5": 104,
+        "fa17caf9-ddb2-44ab-961e-e63682fef749": 105,
+        "378239fa-9f58-4168-85f5-eb8ceb1cacb0": 106,
+        "0e47eeae-b779-48f7-b783-694ff58b772b": 107,
+        "970d13e3-4450-4d57-bf66-fe5a7a06151a": 108,
+        "32bd1fac-1609-4420-a6a8-83a7ca1a4910": 109,
+        "a2e9ce2b-7f89-493a-a62e-2b91698fc8eb": 110,
+        "fd73e691-526c-4781-b67c-122251271c61": 111,
+        "f5a85c1e-b1fa-43b0-b9c2-0951b35c35e9": 112,
+        "ced66535-88e3-4683-b707-2fc34730c97f": 113,
+        "f7aae37b-385b-4bab-a0fd-0ddffbe51549": 114,
+        "da9b7db8-4da9-4bdb-855d-9a4c184f634c": 115,
+        "2fc60505-a874-4eed-983c-b8f16fdb8c42": 116,
+        "723d2e7d-d098-4076-9cfc-5572eaf305da": 117,
+        "fefca98f-3f5c-4bcf-b77d-e1488b3798d6": 118,
+        "72078a1e-06fc-425f-9a5c-265ecb64a3fe": 119,
+        "fb554e31-45fd-4748-96b7-d62dc88d54ba": 120,
+        "40fb64d2-64d4-4bd0-aa10-a5d56fd90499": 121,
+        "96ee3b48-d035-453f-aae3-14893d67db80": 122,
+        "e414508f-716d-4ec8-92e4-0bf0ef583882": 123,
+        "d30fc23d-8ac3-42f8-8f51-75f45131e746": 124,
+        "729642a3-a5f5-4ecf-aaf3-679dfe1aa3c1": 125,
+        "f6a05ac2-be0a-4dd1-a202-3cfd09503c1d": 126
+    }
+]

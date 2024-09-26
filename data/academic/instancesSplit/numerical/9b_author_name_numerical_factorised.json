@@ -1,0 +1,54 @@
+[
+    {
+        "operator": "and",
+        "subformula": [
+            0,
+            1,
+            {
+                "operator": "or",
+                "subformula": [
+                    {
+                        "operator": "and",
+                        "subformula": [
+                            {
+                                "operator": "or",
+                                "subformula": [
+                                    2,
+                                    3,
+                                    4
+                                ]
+                            },
+                            5
+                        ]
+                    },
+                    {
+                        "operator": "and",
+                        "subformula": [
+                            6,
+                            7
+                        ]
+                    },
+                    {
+                        "operator": "and",
+                        "subformula": [
+                            8,
+                            9
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "eccac072-2138-4d11-9f65-69acf295b9f2": 0,
+        "92bdeabe-192c-459a-a01a-b902631f5294": 1,
+        "681b606a-ca4f-4822-a1c7-280c370101a5": 2,
+        "f57c4cde-b0f0-43a0-aca0-c99db6ebd05f": 3,
+        "17eceb91-9895-4a7b-a49d-9e967d28cacc": 4,
+        "0928aa24-cd0c-4b69-bace-f1ca2b609109": 5,
+        "70ee9239-433d-41b3-ab4b-29db2ef967f4": 6,
+        "cf7c4e93-8498-474d-b430-6169fe74d83b": 7,
+        "e315da84-a7c2-4f8f-b6f1-d14d29f97743": 8,
+        "ced87e95-7278-4437-8014-06eb339ebb30": 9
+    }
+]

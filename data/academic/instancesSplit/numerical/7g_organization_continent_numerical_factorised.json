@@ -1,0 +1,127 @@
+[
+    {
+        "operator": "and",
+        "subformula": [
+            0,
+            {
+                "operator": "or",
+                "subformula": [
+                    {
+                        "operator": "and",
+                        "subformula": [
+                            1,
+                            2,
+                            3,
+                            4,
+                            5
+                        ]
+                    },
+                    {
+                        "operator": "and",
+                        "subformula": [
+                            6,
+                            {
+                                "operator": "or",
+                                "subformula": [
+                                    {
+                                        "operator": "and",
+                                        "subformula": [
+                                            7,
+                                            8,
+                                            9,
+                                            10
+                                        ]
+                                    },
+                                    {
+                                        "operator": "and",
+                                        "subformula": [
+                                            11,
+                                            12,
+                                            13,
+                                            14
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "operator": "and",
+                        "subformula": [
+                            15,
+                            16,
+                            17,
+                            18,
+                            10
+                        ]
+                    },
+                    {
+                        "operator": "and",
+                        "subformula": [
+                            19,
+                            {
+                                "operator": "or",
+                                "subformula": [
+                                    {
+                                        "operator": "and",
+                                        "subformula": [
+                                            {
+                                                "operator": "or",
+                                                "subformula": [
+                                                    20,
+                                                    21,
+                                                    22
+                                                ]
+                                            },
+                                            23,
+                                            24,
+                                            10
+                                        ]
+                                    },
+                                    {
+                                        "operator": "and",
+                                        "subformula": [
+                                            25,
+                                            26,
+                                            23,
+                                            10
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "35b98f24-6243-4005-8215-cd3dc6af8a02": 0,
+        "27d7d1a0-2e30-470f-a47d-a363d21d60c1": 1,
+        "8d66af1f-0dc8-41f4-b82c-3cf38cde1f1f": 2,
+        "2ba2fce6-b23b-4d93-82a1-081d0201f372": 3,
+        "3f2fe29d-6d90-4881-994b-11c4e733e9b8": 4,
+        "c8c075c0-9477-4200-af94-44487ef45da2": 5,
+        "3c538558-886d-4ea5-99b7-b2db012250c1": 6,
+        "9d56aafe-f4f8-4b72-8822-cdf23b1956ae": 7,
+        "5e23ea93-b4f9-417b-9f48-3dd75cf8a937": 8,
+        "e1774f0e-6cef-407a-a289-090d4faf09c4": 9,
+        "627c73c9-c4a4-4174-866d-6ad8dcb751e5": 10,
+        "9ed255bf-bfb6-45fe-b69c-4c0f40d31313": 11,
+        "c3c1ac80-26d7-4383-8de4-4cb5d004c62f": 12,
+        "a0c06fc2-beca-4155-ace2-cc35ec923ba2": 13,
+        "58b071d8-8f63-4a8f-b7ad-85d85109d1ed": 14,
+        "f7507b46-e3a6-4aee-bdb4-3546a3a6328f": 15,
+        "78539d90-ebc4-458c-b657-7a2757e7edc8": 16,
+        "c735a7fa-f77f-4b9e-9b0c-79881791ca1d": 17,
+        "99efc8b3-8528-4f4d-b0c8-8dda6abf5ba5": 18,
+        "f9984e8d-b00b-4aed-b087-cb8a3a40abc4": 19,
+        "037e6dec-b530-4251-9bec-e35f5c47f7fc": 20,
+        "9bb392b5-e9f9-4cb1-8cbe-99ebdb0519cd": 21,
+        "d88ac45f-94d6-4404-a184-1672f1c6d479": 22,
+        "e33cdd6a-202b-415a-bf50-35e9ca92def6": 23,
+        "05c750ae-7c57-46f9-84d1-dacb1518f93c": 24,
+        "d72a32fd-cb4e-4929-969e-4a31af9d5af4": 25,
+        "e7d8378a-03ed-47cf-aeea-80d09a175f06": 26
+    }
+]

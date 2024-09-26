@@ -1,0 +1,24 @@
+[
+    {
+        "Dataset": "Academic",
+        "Query_name": "3e_publication_citation_count",
+        "Output_tuples": "",
+        "DNF": [
+            [
+                0,
+                1,
+                2,
+                3,
+                4
+            ]
+        ],
+        "Signature": "(E*(B*(D*(A*C)*)*)*)*"
+    },
+    {
+        "a25d1121-d7b4-4130-8135-ee94605d33e9": 0,
+        "ea3dd86c-0472-43b7-aa40-ade4c56c307f": 1,
+        "5acc4e24-fc46-482f-8c32-a6029047ff13": 2,
+        "ab97727f-0e58-46c0-84c8-437c7a09c883": 3,
+        "8eb11a01-a258-4e84-b748-4fde0bc4b855": 4
+    }
+]
