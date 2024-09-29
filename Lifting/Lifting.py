@@ -67,14 +67,16 @@ class Lifting():
                         formula.subformula[index] = str(var_to_lifted_var_dict[subformula] + current_id)
 
 
-    gobal_var_to_clause_dict = {}
 
     def lift_read_once_clause(self, formula, current_var=0):
+        gobal_var_to_clause_dict = {}
         variables_dict = formula.get_variable_dict(formula.subformula)
         variables_to_lift = []
         for subformula in formula.subformula:
             if isinstance(subformula, type(formula)):
-                current_var = self.lift_read_once_clause(subformula, current_var)
+                current_var, lift_dict = self.lift_read_once_clause(subformula, current_var)
+                if len(lift_dict) > 0:
+                    gobal_var_to_clause_dict.update(lift_dict)
             else:
                 if variables_dict[subformula] == 1:
                     variables_to_lift.append(subformula)
@@ -83,8 +85,8 @@ class Lifting():
                 formula.subformula.remove(variable)
 
             formula.subformula.append(str(current_var))
-            self.gobal_var_to_clause_dict[current_var] = {"operator": formula.operator, "subformula": variables_to_lift}
+            gobal_var_to_clause_dict[str(current_var)] = {"operator": formula.operator, "subformula": variables_to_lift}
             current_var += 1
 
         formula.get_variable_dict(formula.subformula)
-        return current_var
+        return current_var, gobal_var_to_clause_dict

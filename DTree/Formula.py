@@ -26,20 +26,23 @@ class formula:
 
     def get_variable_dict(self, subformula):
         variables_dict = {}
-        for element in subformula:
-            if isinstance(element, formula):
-                dict_ = element.get_variable_dict(element.subformula)
-                for key, value in dict_.items():
-                #for key, value in element.variables_dict.items():
-                    if key in variables_dict:
-                        variables_dict[key] += value
+        try:
+            for element in subformula:
+                if isinstance(element, formula):
+                    dict_ = element.get_variable_dict(element.subformula)
+                    for key, value in dict_.items():
+                    #for key, value in element.variables_dict.items():
+                        if key in variables_dict:
+                            variables_dict[key] += value
+                        else:
+                            variables_dict[key] = value
+                elif isinstance(element, str) or isinstance(element, int):
+                    if element in variables_dict:
+                        variables_dict[element] += 1
                     else:
-                        variables_dict[key] = value
-            elif isinstance(element, str) or isinstance(element, int):
-                if element in variables_dict:
-                    variables_dict[element] += 1
-                else:
-                    variables_dict[element] = 1
+                        variables_dict[element] = 1
+        except:
+            raise Exception(f"Error in get_variable_dict for {subformula}")
         return variables_dict
 
     def get_variables(self, subformula):
@@ -225,7 +228,6 @@ class formula:
         
         if self.operator == "or":
             result = 2 ** (self.variable_count) -1
-
         return result
     
     def satisfying_assignments_fact(self, fact):

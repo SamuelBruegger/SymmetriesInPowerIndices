@@ -109,13 +109,19 @@ class Dtree:
             variables = list(set().union(variables, self.hidden_variable))
         return variables 
                    
-    def satisfying_assignments(self):
+    def satisfying_assignments(self, var_to_lifted_var = {}, lifting_dict = {}):
         if self.current_satisfying_assignments is not None:
             return self.current_satisfying_assignments
 
         if self.gate is None or self.gate == DTREE_GATE.Empty_Gate:
-            if isinstance(self.formula, str):
-                return 1
+            if isinstance(self.formula, str) or isinstance(self.formula, int):
+                if self.formula in lifting_dict:
+                    if lifting_dict[self.formula]["operator"] == "or":
+                        return 2 ** len(lifting_dict[self.formula]["subformula"]) - 1
+                    if lifting_dict[self.formula]["operator"] == "and":
+                        return 1
+                else:
+                    return 1
             if isinstance(self.formula, bool):
                 if self.formula:
                     return 1
@@ -125,12 +131,29 @@ class Dtree:
                 self.current_satisfying_assignments = self.formula.satisfying_assignments()
             return self.current_satisfying_assignments
 
-        dtree1_assignments = self.dtree1.satisfying_assignments()
-        dtree2_assignments = self.dtree2.satisfying_assignments()
+        dtree1_assignments = self.dtree1.satisfying_assignments(var_to_lifted_var, lifting_dict)
+        dtree2_assignments = self.dtree2.satisfying_assignments(var_to_lifted_var, lifting_dict)
 
         if self.gate == DTREE_GATE.Independent_Or:
-            return dtree1_assignments * (2 ** self.dtree2.variable_count) + \
-                    dtree2_assignments * (2 ** self.dtree1.variable_count) - \
+            list_var_dtree1 = []
+            for var in self.dtree1.variables:
+                if var in lifting_dict and type(lifting_dict[var]["subformula"]) is list:
+                    list_var_dtree1.extend(lifting_dict[var]["subformula"])
+                else:
+                    list_var_dtree1.append(var)
+            dtree1_variable_count = len(set(list_var_dtree1))
+
+            list_var_dtree2 = []
+            for var in self.dtree2.variables:
+                if var in lifting_dict and type(lifting_dict[var]["subformula"]) is list:
+                    list_var_dtree2.extend(lifting_dict[var]["subformula"])
+                else:
+                    list_var_dtree2.append(var)
+            dtree2_variable_count = len(set(list_var_dtree2))
+
+
+            return dtree1_assignments * (2 ** dtree2_variable_count) + \
+                    dtree2_assignments * (2 ** dtree1_variable_count) - \
                     dtree1_assignments * dtree2_assignments
             
 
@@ -138,11 +161,22 @@ class Dtree:
             return dtree1_assignments * dtree2_assignments
             
         elif self.gate == DTREE_GATE.Exclusive_Or:
-            variables1 = self.dtree1.variables
-            variables2 = self.dtree2.variables
+            list_var_dtree1 = []
+            for var in self.dtree1.variables:
+                if var in lifting_dict and type(lifting_dict[var]["subformula"]) is list:
+                    list_var_dtree1.extend(lifting_dict[var]["subformula"])
+                else:
+                    list_var_dtree1.append(var)
 
-            unique_variables1 = len([x for x in variables1 if x not in variables2])
-            unique_variables2 = len([x for x in variables2 if x not in variables1])
+            list_var_dtree2 = []
+            for var in self.dtree2.variables:
+                if var in lifting_dict and type(lifting_dict[var]["subformula"]) is list:
+                    list_var_dtree2.extend(lifting_dict[var]["subformula"])
+                else:
+                    list_var_dtree2.append(var)
+            
+            unique_variables1 = len([x for x in list_var_dtree1 if x not in list_var_dtree2])
+            unique_variables2 = len([x for x in list_var_dtree2 if x not in list_var_dtree1])
 
             return dtree1_assignments * (2 ** unique_variables2) + dtree2_assignments * (2 ** unique_variables1)
 
@@ -151,38 +185,80 @@ class Dtree:
             raise ValueError("Error - false gate")
             return -1
 
-    def critical_assignments_fact(self, fact):
-        if fact not in self.variables:
+    def critical_assignments_fact(self, fact, var_to_lifted_var = {}, lifting_dict = {}):
+        list_of_original_variables = []
+        for var in self.variables:
+            if var in lifting_dict and type(lifting_dict[var]["subformula"]) is list:
+                list_of_original_variables.extend(lifting_dict[var]["subformula"])
+            else:
+                list_of_original_variables.append(var)
+
+        if fact not in list_of_original_variables:
             return 0
 
         if self.gate is None or self.gate == DTREE_GATE.Empty_Gate:
             if isinstance(self.formula, str):
-                return 1 if self.formula == fact else 0
+                if self.formula == fact:
+                    return 1
+                if fact in lifting_dict[self.formula]["subformula"]:
+                    if lifting_dict[self.formula]["operator"] == "or":
+                        return 2 ** len(lifting_dict[self.formula]["subformula"]) - 1
+                    if lifting_dict[self.formula]["operator"] == "and":
+                        return 1
+                return 0
             return self.formula.critical_assignments_for_fact(fact)
 
         if self.gate == DTREE_GATE.Independent_Or:
-            if fact in self.dtree1.variables:
-                return self.dtree1.critical_assignments_fact(fact) * (
-                        (2 ** self.dtree2.variable_count) - self.dtree2.satisfying_assignments())
+            list_var_dtree1 = []
+            for var in self.dtree1.variables:
+                if var in lifting_dict and type(lifting_dict[var]["subformula"]) is list:
+                    list_var_dtree1.extend(lifting_dict[var]["subformula"])
+                else:
+                    list_var_dtree1.append(var)
+
+            if fact in self.dtree1.variables or fact in list_var_dtree1:
+                list_var_dtree2 = []
+                for var in self.dtree2.variables:
+                    if var in lifting_dict and type(lifting_dict[var]["subformula"]) is list:
+                        list_var_dtree2.extend(lifting_dict[var]["subformula"])
+                    else:
+                        list_var_dtree2.append(var)
+                dtree2_variable_count = len(set(list_var_dtree2))
+                return self.dtree1.critical_assignments_fact(fact, var_to_lifted_var, lifting_dict) * (
+                        (2 ** dtree2_variable_count) - self.dtree2.satisfying_assignments(var_to_lifted_var, lifting_dict))
             else:
-                return self.dtree2.critical_assignments_fact(fact) * (
-                        (2 ** self.dtree1.variable_count) - self.dtree1.satisfying_assignments())
+
+                dtree1_variable_count = len(set(list_var_dtree1))
+                return self.dtree2.critical_assignments_fact(fact, var_to_lifted_var, lifting_dict) * (
+                        (2 ** dtree1_variable_count) - self.dtree1.satisfying_assignments(var_to_lifted_var, lifting_dict))
 
         elif self.gate == DTREE_GATE.Independent_And:
             if fact in self.dtree1.variables:
-                return self.dtree1.critical_assignments_fact(fact) * self.dtree2.satisfying_assignments()
+                return self.dtree1.critical_assignments_fact(fact, var_to_lifted_var, lifting_dict) * self.dtree2.satisfying_assignments(var_to_lifted_var, lifting_dict)
             else:
-                return self.dtree2.critical_assignments_fact(fact) * self.dtree1.satisfying_assignments()
+                return self.dtree2.critical_assignments_fact(fact, var_to_lifted_var, lifting_dict) * self.dtree1.satisfying_assignments(var_to_lifted_var, lifting_dict)
 
         elif self.gate == DTREE_GATE.Exclusive_Or:
-            variables1 = self.dtree1.variables
-            variables2 = self.dtree2.variables
-            unique_variables1 = len([x for x in variables1 if x not in variables2])
-            unique_variables2 = len([x for x in variables2 if x not in variables1])
+            list_var_dtree1 = []
+            for var in self.dtree1.variables:
+                if var in lifting_dict and type(lifting_dict[var]["subformula"]) is list:
+                    list_var_dtree1.extend(lifting_dict[var]["subformula"])
+                else:
+                    list_var_dtree1.append(var)
 
-            if self.hidden_variable == fact:
-                return self.dtree2.satisfying_assignments() * (
-                        2 ** unique_variables1) - self.dtree1.satisfying_assignments() * (2 ** unique_variables2)
+            list_var_dtree2 = []
+            for var in self.dtree2.variables:
+                if var in lifting_dict and type(lifting_dict[var]["subformula"]) is list:
+                    list_var_dtree2.extend(lifting_dict[var]["subformula"])
+                else:
+                    list_var_dtree2.append(var)
+            
+            unique_variables1 = len([x for x in list_var_dtree1 if x not in list_var_dtree2])
+            unique_variables2 = len([x for x in list_var_dtree2 if x not in list_var_dtree1])
+
+            if self.hidden_variable == fact or fact in self.hidden_variable:
+                return self.dtree2.satisfying_assignments(var_to_lifted_var, lifting_dict) * (
+                        2 ** unique_variables1) - self.dtree1.satisfying_assignments(var_to_lifted_var, lifting_dict) * (2 ** unique_variables2)
             else:
                 return self.dtree1.critical_assignments_fact(fact) * (
                         2 ** unique_variables2) + self.dtree2.critical_assignments_fact(fact) * (
